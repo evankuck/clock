@@ -19,3 +19,11 @@ console.log("loaded");
 
           $("#clock").html(time);
      }
+
+
+     // update the clock every second
+     $(document).ready(function() {
+          updateClock();
+          setInterval(updateClock, 1000);
+     });
+     // End of script
